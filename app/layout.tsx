@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Silver Palace",
+    title: "Silver Palace Toulouse",
     description: "Découvrez le Silver Palace, offrant une ambiance sensuelle, élégante et des performances captivantes.",
     icons: {
         icon: "/favicon.ico",

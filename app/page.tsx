@@ -1,4 +1,8 @@
 // app/under-construction/page.jsx (Next.js 13+ with App Router)
+import { Alex_Brush, Philosopher } from 'next/font/google';
+
+const alexBrush = Alex_Brush({ subsets: ['latin'], weight: ['400'] });
+const philosopher = Philosopher({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-philosopher' });
 
 export default function UnderConstruction() {
     return (
@@ -27,8 +31,11 @@ export default function UnderConstruction() {
                     alt="Silver Palace Logo"
                     style={{ maxWidth: "500px", margin: "50px", width: "80%" }}
                 />
-                <p style={{ fontSize: "1.4rem", marginTop: "10px", color: "#f3f3f3" }}>
-                    Ce site est actuellement en construction...<br />
+                <p className={philosopher.className} style={{ fontSize: "1.2rem", marginTop: "10px", color: "#f3f3f3" }}>
+                    Ce site est actuellement en construction...
+                </p>
+                <br />
+                <p className={alexBrush.className} style={{ fontSize: "2rem", marginTop: "0px", color: "#e3048a" }}>
                     Reviens très vite pour découvrir notre univers.
                 </p>
 
@@ -37,7 +44,7 @@ export default function UnderConstruction() {
                     width: "80%",
                     maxWidth: "400px",
                     height: "10px",
-                    background: "#333",
+                    background: "#e3048a",
                     borderRadius: "10px",
                     overflow: "hidden",
                     marginTop: "20px"
@@ -45,7 +52,7 @@ export default function UnderConstruction() {
                     <div className="loading-bar" style={{
                         width: "100%",
                         height: "100%",
-                        background: "linear-gradient(90deg, #888, #fff, #888)",
+                        background: "linear-gradient(90deg, #000, #e3048a, #000)",
                         backgroundSize: "200% 100%",
                         animation: "loading 2s infinite"
                     }}></div>
