@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     title: "Silver Palace",
     description: "Silver Palace Toulouse. Club de strip-tease et bar à hôtesses.",
+    icons: {
+        icon: "/favicon.ico",
+    },
 };
 
 export default function RootLayout({
