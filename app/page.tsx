@@ -29,7 +29,7 @@ export default function UnderConstruction() {
                 <img
                     src={"/silverPalace_logo_gris-1280x627.png"}
                     alt="Silver Palace Logo"
-                    style={{ maxWidth: "500px", margin: "50px", width: "80%" }}
+                    style={{ maxWidth: "500px", marginBottom: "50px", width: "80%" }}
                 />
                 <p className={philosopher.className} style={{ fontSize: "1.2rem", marginTop: "10px", color: "#f3f3f3" }}>
                     Ce site est actuellement en construction...
